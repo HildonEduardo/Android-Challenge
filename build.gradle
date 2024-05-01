@@ -12,7 +12,9 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-
+plugins {
+    id 'com.google.dagger.hilt.android' version '2.48' apply false
+}
 ext {
     core_ktx = "1.13.0"
     compose_ui = "1.6.6"
@@ -22,6 +24,7 @@ ext {
     ok_http_urlconn = "4.10.0"
     retrofit = "2.9.0"
     retrofit_scalar_converter = "2.7.1"
+    dagger_hilt = "2.48"
 }
 
 tasks.register('clean', Delete) {

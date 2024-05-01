@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
 }
 
 android {
@@ -72,7 +74,6 @@ dependencies {
     implementation composeBom
     androidTestImplementation composeBom
 
-    // Choose one of the following:
     // Material Design 3
     implementation 'androidx.compose.material3:material3'
 
@@ -93,6 +94,9 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:$retrofit"
     implementation "com.squareup.retrofit2:converter-scalars:$retrofit_scalar_converter"
 
+    //dagger-hilt
+    implementation "com.google.dagger:hilt-android:$dagger_hilt"
+    kapt "com.google.dagger:hilt-compiler:$dagger_hilt"
 
     //test
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
