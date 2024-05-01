@@ -5,12 +5,23 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.3.0'
+        classpath 'com.android.tools.build:gradle:8.4.0'
         classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.23'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
+}
+
+ext {
+    core_ktx = "1.13.0"
+    compose_ui = "1.6.6"
+    gson = "2.10.1"
+    ok_http = "4.12.0"
+    ok_http_logging = "4.10.0"
+    ok_http_urlconn = "4.10.0"
+    retrofit = "2.9.0"
+    retrofit_scalar_converter = "2.7.1"
 }
 
 tasks.register('clean', Delete) {
