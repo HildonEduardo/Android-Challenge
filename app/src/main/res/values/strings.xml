@@ -4,4 +4,8 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="top_movies_title">Top Movies</string>
+    <string name="browse_by_genre_title">Genres</string>
+    <string name="browse_all_title">All movies</string>
+    <string name="movie_banner_descriptor">Movie Banner</string>
 </resources>

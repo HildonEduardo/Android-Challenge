@@ -1,4 +1,4 @@
-package com.podium.technicalchallenge.data.network.retrofit
+package com.podium.technicalchallenge.data.network
 
 import retrofit2.Response
 import retrofit2.http.Body

@@ -25,6 +25,7 @@ ext {
     retrofit = "2.9.0"
     retrofit_scalar_converter = "2.7.1"
     dagger_hilt = "2.48"
+    glide = "1.0.0-beta01"
 }
 
 tasks.register('clean', Delete) {

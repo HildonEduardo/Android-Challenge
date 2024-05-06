@@ -1,12 +1,8 @@
 package com.podium.technicalchallenge
 
-import com.google.gson.Gson
 import com.podium.technicalchallenge.entity.MovieEntity
-import com.podium.technicalchallenge.entity.MovieResponse
-import com.podium.technicalchallenge.network.ApiClient
-import com.podium.technicalchallenge.network.queries.Queries
-import com.podium.technicalchallenge.network.retrofit.GraphQLService
-import org.json.JSONObject
+import com.podium.technicalchallenge.data.network.Queries
+     import org.json.JSONObject
 
 class Repo {
 
@@ -14,10 +10,11 @@ class Repo {
         val paramObject = JSONObject()
         paramObject.put("query", Queries.getMoviesQuery())
 
-        val response = ApiClient.getInstance().provideRetrofitClient().create(GraphQLService::class.java).query(paramObject.toString())
-        val jsonBody = response.body()
-        val data = Gson().fromJson(jsonBody, MovieResponse::class.java)
-        return data.data.movies
+//        val response = ApiClient.getInstance().provideRetrofitClient().create(GraphQLService::class.java).query(paramObject.toString())
+//        val jsonBody = response.body()
+//        val data = Gson().fromJson(jsonBody, MovieResponse::class.java)
+//        return data.data.movies
+        return emptyList()
     }
 
     companion object {

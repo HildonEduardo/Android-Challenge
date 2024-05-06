@@ -1,4 +1,4 @@
-package com.podium.technicalchallenge.data.network.queries
+package com.podium.technicalchallenge.data.network
 
 object Queries {
     fun getMoviesQuery(limit : Int = 5) =
